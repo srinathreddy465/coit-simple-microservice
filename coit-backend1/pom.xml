@@ -52,7 +52,7 @@
 		<snapshotRepository>
 			<id>Backend1-Snapshot</id>
 			<name>Backend1-Snapshot</name>
-			<url>http://15.206.172.240:8081/repository/Backend1-Snapshot///</url>
+			<url>http://15.206.172.240:8081/repository/Backend1-Snapshot/</url>
 		</snapshotRepository>
 	</distributionManagement>
 
