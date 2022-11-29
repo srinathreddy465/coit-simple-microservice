@@ -11,7 +11,7 @@ pipeline{
        stage("Deploy"){
             steps{
                 sh 'cd coit-backend1/target/'
-                sh 'java -jar sentiment-analysis-web-0.0.1.jar'
+                sh 'ls -la'
              
             }
         } 
