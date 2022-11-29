@@ -8,10 +8,13 @@ pipeline{
         }
         
         
-       stage("Deploy"){
+            
+            
+
+       stage("Docker Build and Run"){
             steps{
-                sh 'ls -la'
-                sh 'cd coit-backend1/target/ && java -jar sentiment-analysis-web-0.0.1.jar'
+                sh 'cd coit-backend1 && docker build -t coit-backend1 .'
+                sh 'docker run -d -p 80:80 coit-backend1'
                 
              
             }
