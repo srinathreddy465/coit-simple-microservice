@@ -8,12 +8,12 @@ pipeline{
         }
         stage("Setup Env"){
             steps{
-                sh "SA_LOGIC_API_URL http://localhost:5000"
+                sh 'SA_LOGIC_API_URL http://localhost:5000'
             }
         }
         stage("Deploy"){
             steps{
-                sh "CMD ["java", "-jar", "sentiment-analysis-web-0.0.1.jar", "--sa.logic.api.url=${SA_LOGIC_API_URL}"]"
+                sh 'CMD ["java", "-jar", "sentiment-analysis-web-0.0.1.jar", "--sa.logic.api.url=${SA_LOGIC_API_URL}"]'
             }
         }
         
