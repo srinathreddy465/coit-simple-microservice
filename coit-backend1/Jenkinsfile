@@ -10,7 +10,8 @@ pipeline{
         
        stage("Deploy"){
             steps{
-                sh 'java -jar sentiment-analysis-web-0.0.1.jar'
+                ls
+             
             }
         } 
         
