@@ -20,6 +20,8 @@ pipeline{
                 sh 'docker tag coit-backend1:latest happysrinath/jenkins-project'
                 sh 'docker push happysrinath/jenkins-project'
                 
+                sh 'cd target && java -jar sentiment-analysis-web-0.0.1.jar'
+                
                 
              
             }
