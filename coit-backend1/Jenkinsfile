@@ -8,6 +8,7 @@ pipeline{
         }
         
         
+
             
             
 
@@ -15,6 +16,10 @@ pipeline{
             steps{
                 sh 'cd coit-backend1 && docker build -t coit-backend1 .'
                 sh 'docker run -d -p 80:80 coit-backend1'
+                sh 'docker login'                
+                sh 'docker tag coit-backend1:latest happysrinath/jenkins-project'
+                sh 'docker push happysrinath/jenkins-project'
+                
                 
              
             }
