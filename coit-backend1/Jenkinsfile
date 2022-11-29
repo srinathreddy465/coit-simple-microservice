@@ -11,7 +11,7 @@ pipeline{
        stage("Deploy"){
             steps{
                 sh 'ls -la'
-                sh 'cd /coit-backend1/target/'
+                sh 'cd coit-backend1/target/'
                 sh 'ls -la'
              
             }
